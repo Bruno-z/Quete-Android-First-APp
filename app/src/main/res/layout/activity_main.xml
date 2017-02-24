@@ -61,6 +61,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:id="@+id/button2" />
+        android:id="@+id/button2"
+        android:enabled="false"/>
+
+    <TextView
+        android:text="@string/congratz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_marginTop="63dp"
+        android:visibility="gone"/>
 
 </RelativeLayout>
