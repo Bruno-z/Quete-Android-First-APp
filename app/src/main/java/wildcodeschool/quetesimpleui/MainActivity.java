@@ -56,15 +56,16 @@ public class MainActivity extends Activity {
 
 
                 if (editText2.length() != 0 && editText3.length() !=0) {
-                    textView2.setText("you are a Wizard now: " +editText2.getText()+ " "+editText3.getText());
+                    textView2.setText(getString(R.string.congratz) + editText2.getText()+ " "+editText3.getText());
                     textView2.setVisibility(View.VISIBLE);
+
                 }
 
                     else
                 {
 
                     Context context = getApplicationContext();
-                CharSequence text = "toast";
+                CharSequence text = (getString(R.string.toast));
                 int duration = Toast.LENGTH_SHORT;
 
                 Toast toast = Toast.makeText(context, text, duration);
